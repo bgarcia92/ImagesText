@@ -19,7 +19,7 @@ def generate(imagenes):
         fnt = ImageFont.truetype('arial.ttf', 40)
 
         d = ImageDraw.Draw(txt)
-        d.text((0,0), imagen, font=fnt, fill=(0,0,0,255))
+        d.text((0,0), imagen[:6], font=fnt, fill=(0,0,0,255))
 
         #add layer
         out = Image.alpha_composite(base, txt)
